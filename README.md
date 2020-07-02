@@ -6,6 +6,11 @@ This artificially intelligent iOS app correctly identifies if an animal is a dog
 - Users can take a picture of an animal and it will tell you if that animal is a dog, cat or rabbit
 
 ## Demo:
+<div>
+<img style="float: left;" src="https://media.giphy.com/media/cO2lgOSXScqIEqbkon/giphy.gif" title="Dog"/>
+<img style="float: left;" src="https://media.giphy.com/media/WsuymaWfSXI7TM4vKI/giphy.gif" title="Cat"/>
+<img style="float: left;" src="https://media.giphy.com/media/jUng48D95KszsQOxu9/giphy.gif" title="Bunny"/>
+</div>
 
 
 ## Technology Used:
