@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P0a-zL-5ho">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WhatAnimal_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fk2-Xp-e1Q">
+                                <rect key="frame" x="20" y="111" width="374" height="489"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fk2-Xp-e1Q" secondAttribute="height" multiplier="374:489" id="MOp-Mb-qrj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take A Picture Of A Dog, Cat Or Rabbit" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="Ms3-iB-mQp">
+                                <rect key="frame" x="20" y="625" width="374" height="237"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ms3-iB-mQp" secondAttribute="height" multiplier="374:237" id="acO-Qc-pQN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="80"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.792156862745098" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fk2-Xp-e1Q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="Ncb-eq-eQ0"/>
+                            <constraint firstItem="Ms3-iB-mQp" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="S5w-XC-tNS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ms3-iB-mQp" secondAttribute="trailing" constant="20" id="Vlz-ID-j36"/>
+                            <constraint firstItem="Ms3-iB-mQp" firstAttribute="top" secondItem="fk2-Xp-e1Q" secondAttribute="bottom" constant="25" id="W3m-1w-Fkh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fk2-Xp-e1Q" secondAttribute="trailing" constant="20" id="WhP-5M-vjh"/>
+                            <constraint firstItem="Ms3-iB-mQp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uab-KV-2KV"/>
+                            <constraint firstItem="Ms3-iB-mQp" firstAttribute="top" secondItem="fk2-Xp-e1Q" secondAttribute="bottom" constant="25" id="wu0-mL-wmk"/>
+                            <constraint firstItem="fk2-Xp-e1Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xVO-42-T8i"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="B3r-eq-L30">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="PnU-g2-1uT">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="cameraButtonPressed:" destination="BYZ-38-t0r" id="mer-aZ-MyZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="fk2-Xp-e1Q" id="NLJ-YZ-5KO"/>
+                        <outlet property="label" destination="Ms3-iB-mQp" id="dXQ-DZ-iS6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="112.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sgI-Ky-eIq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P0a-zL-5ho" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YEo-Tw-NQp">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.62352941176470589" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PKp-d3-GIf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FLl-FJ-scB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="112.5"/>
+        </scene>
+    </scenes>
+</document>
